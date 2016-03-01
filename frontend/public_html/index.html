@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Restful Java</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/t/bs/dt-1.10.11/datatables.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+</head>
+<body>    
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Lab3</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">About us</a></li>            
+          </ul>          
+          
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!--End of nav bar -->
+        
+    <div class="container">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Users List</h3>
+                </div>
+                <div class="panel-body">
+                    <table id="users-list" class="dataTable table table-striped table-hover" width="100%"></table>
+                </div>
+            </div>            
+    </div> 
+    <!--End of container -->
+    
+    
+    <div class="modal fade" id="details-modal" tabindex="-1" role="dialog" aria-labelledby="details-modal-label">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="details-modal-label"></h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-horizontal">
+                            <div class="form-group">
+                                <div class="col-sm-3">
+                                    <label class="control-label"><i class="fa fa-hashtag"></i> Id</label>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input id="details-id" class="form-control required" disabled="" type="text" value="6">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-3">
+                                    <label class="control-label"><i class="fa fa-user"></i> Username</label>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input id="details-username" class="form-control required" disabled="" type="text" value="6">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-3">
+                                    <label class="control-label"><i class="fa fa-key"></i> Password</label>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input id="details-password" class="form-control required" disabled="" type="text" value="6">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-3">
+                                    <label class="control-label"><i class="fa fa-envelope"></i> Email</label>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input id="details-email" class="form-control required" disabled="" type="text" value="6">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-3">
+                                    <label class="control-label"><i class="fa fa-list-alt"></i> Name</label>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input id="details-name" class="form-control required" disabled="" type="text" value="6">
+                                </div>
+                            </div>                            
+                            <div class="form-group">
+                                <div class="col-sm-3">
+                                    <label class="control-label"><i class="fa fa-flag"></i> Status</label>
+                                </div>
+                                <div class="col-sm-9">
+                                    <input id="details-status" class="form-control required" disabled="" type="text" value="6">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>Ï
+    <!--End of user detail modal -->
+        
+    <script src="js/jquery-1.12.1.js"></script>    
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/t/bs/dt-1.10.11/datatables.min.js"></script>
+    <script src="js/main.js"></script>    
+
+</body>
+</html>
